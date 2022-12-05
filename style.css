@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+/* Nagivasjonsbar */
+* {
+    box-sizing: border-box;
+}
+
+.nav {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #99aab5;
+    background-color: #23272ae8;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 19px;
+}
+
+.nav a:hover, .fa-bars:hover {
+    background-color: #141618;
+    border-radius: 10px;
+}
+
+.logo{
+    width: 150px;
+}
+/* Navigasjonsbar slutt */
+
+/* Footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    background-color: #23272ae8;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-top: 1px solid #99aab5;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    padding-right: 15px;
+}
+/* Slutt av footer */
+
+/* Body */
+body {
+    height: 100%;
+    background-color: #23272a;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    margin-top: 45px;
+    margin-bottom: 50px;
+
+}
+
+/* Index */
+
+#bakgrunn {
+    background: url(bilder/xc90r.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0a0a0a;
+}
+
+.ad {
+    font-size: 50px;
+    font-weight: 900.0;
+    color: white;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    padding-top: 100px;
+}
+.indexexplore {
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+    text-shadow: 3px 2px black;
+    position: fixed; top: 80vh; left: 20vh; float: right;
+}
+
+.indexexplore:hover {
+    color: darkgrey;
+}
+
+.main h1 {
+    padding-top: 25px;
+    text-align: center;
+
+}
+/* Index slutt */
+
+/* Produkt */
+
+.produktbannerbilde {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    border-bottom: 1px solid #99aab5;
+}
+
+.produktbannertekst {
+    padding-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    z-index: 1;
+}
+
+.produktlink {
+    text-align: center;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.produktmain {
+    padding-top: 40vh;
+
+}
+
+
+.produkt-container {
+    position: relative;
+    padding-bottom: 25px;
+}
+.produkttable {
+    padding-bottom: 50px;
+}
+
+
+/* ----- Produkt Slutt ----- */
+
+/* OM OSS */
+
+.omOss{
+    text-align: center;
+    font-size: 30px;
+}
+
+.omOssRow{
+    text-align: center;
+    font-size: 20px;
+
+}
+.omOssTekst {
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+
+}
+
+.omBilde img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.column-om {
+    float: left;
+    width: 32%;
+    padding-bottom: 30px;
+  }
+  
+  /* Clear floats after the columns */
+  .row-om:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* ----- OM OSS SLUTT ----- */
+
+/* Mediagalleri */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 48%;
+    max-width: 48%;
+    padding: 0 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #99aab5;
+}
+
+.column img:hover {
+    opacity: 0.5;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 70%;
+    position: relative;
+    margin: auto;
+    border: 2px solid #99aab5;
+}
+  
+/* Bildetekst */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+/* Nummertekst (1-3 osv.) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+/* Dot-indikatorer */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active {
+    background-color: #717171;
+}
+  
+/* Fading animasjon */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+ 
+
+
+/* Mediagalleri slutt */
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+/* Karriere Start */
+
+#jobblink {
+    color: lightblue
+}
+
+#jobbcars {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    border: #99aab5 3px solid;
+}
+#karriere {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.karrieretekst {
+    text-align: left;
+    font-size: 19px;
+}
+
+/* ----- Karriere slutt ----- */
+
+/* Kontakt START */
+
+.kontaktbanner {
+    position: absolute;
+    left: 0;
+    top: 65px;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #000000;
+    z-index: -1;
+}
+#kontaktbannertekst {
+    position: absolute;
+    text-align: left;
+    left: 7px;
+    top: 100px;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-left: 10vh;
+}
+.kontaktbannerbrødtekst {
+    position: absolute;
+    left: 7px;
+    top: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-left: 10vh;
+
+}
+.flex-kontakt{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    position: relative;
+    margin-top: 38rem;
+    margin-bottom: 50px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+.flex-kontakt img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75%;
+    flex-basis: 100%;
+}
+
+.flex-telefon {
+    padding: 25px 25px 25px 25px;
+    width: 180px;
+
+}
+.flex-ig {
+    padding: 25px 25px 25px 25px;
+    width: 180px;
+}
+.flex-mail {
+    padding: 25px 25px 25px 25px;
+    width: 180px;
+}
+.flex-telefon p, .flex-ig p, .flex-mail p {
+    margin-top: -35px;
+}
+#kontaktlink {
+    color: white;
+}
+
+/* SKJEMA */
+
+.skjemaside {
+    font-size: 20px;
+    padding-top: 60px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#feilmelding {
+    color: red;
+    font-size: 22px;
+    text-align: center;
+}
+#registrert {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* Styling av scrollbar */
+/* Bredde */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Spor */
+  ::-webkit-scrollbar-track {
+    background: #2c2f33;
+  }
+  
+  /* Håndtak */
+  ::-webkit-scrollbar-thumb {
+    background: #99aab5;
+  }
+  
+  /* Håndtak ved hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  /* Dropdown-meny for mobil */
+  .dhidden {
+    display:none!important;
+  }
+
+    @media only screen and (max-width: 1024px) {
+    .slideshow-container, .dot {
+    display: none;
+    }
+    .kontaktbannerbrødtekst, #kontaktbannertekst, .kontaktbanner {
+        position: relative;
+    }
+    .footer {
+        text-align: center;
+    }
+    .produktbannertekst {
+        padding-top: 250px;
+    }
+    .produktbannerbilde {
+        padding-top: 60px;
+    }
+
+    .produktmain {
+    padding-top: 0vh;
+    }
+
+    #jobbcars {
+    width: 90%;
+   }
+
+   .main h1 {
+    padding-top: 70px;
+   }
+
+    }
+    @media only screen and (max-width: 641px) {
+
+    .nav {
+        flex-direction: column;
+        font-size: 30px;
+
+    } 
+    .dhidden {
+     display: block!important;   
+    }
+    .nav a {
+    display: none;
+    }
+  
+    .produkt-container, .column {
+          flex: 100%;
+    max-width: 100%;
+    padding-right: 30px;
+    }
+     .kontaktbannerbrødtekst, #kontaktbannertekst {
+        margin-left: 1vh;
+        padding-top: 0px;
+        margin-right: 1vh;
+    }
+    .kontaktbannerbrødtekst {
+        top: 100px;
+    }
+    .footer {
+    text-align: center;
+    }
+    .indexexplore {
+        top: 70vh;
+    }
+    .logo {
+        width: 250px;
+    }
+    .produktbannertekst {
+        padding-top: 150px;
+    }
+    .produktbannerbilde {
+        padding-top: 80px;
+    }
+    .flex-kontakt {
+        margin-top: 20rem;
+
+    }
+     .grid-container .column {
+          flex: 100%;
+    max-width: 100%;
+    padding-right: 30px;
+    }
+   #jobbcars {
+    width: 90%;
+   }
+   .column-om {
+    width: 99%;
+   }
+   .indexexplore {
+    font-size: 40px;
+    }   
+    h3.ad {
+        font-size: 30px;
+        margin-top: 200px;
+    }
+}   

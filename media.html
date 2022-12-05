@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Media</title>
+   <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="bilder/icon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nettside basert på Volvo">
+    <meta name="keywords" content="Oblig 1, HTML, CSS">
+    <meta name="author" content="Gruppe 10">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- Headeren skal inneholde et bannerfoto! -->
+    <div class="header">
+        <div class="nav">
+                <img class="logo" src="bilder/volvo-hvit.png" alt="volvologo">
+                <i class="fa fa-bars dhidden" onclick="togglemenu()">
+                </i>
+            <a href="index.html">HJEM</a>
+            <a href="produkt.html">PRODUKT</a>
+            <a href="omoss.html">OM VOLVO</a>
+            <a href="media.html">MEDIA</a>
+            <a href="karriere.html">KARRIERE</a>
+            <a href="kontakt.html">KONTAKT</a>
+            <a href="skjema.html">SKJEMA</a>
+        </div>
+    </div>
+
+    <!-- Main er sidens hovedinnhold -->
+    <div class="main">
+        <h1>BILDEGALLERI</h1>
+        <h1>Se gjennom vårt galleri av bilder</h1>
+
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="bilder/volvov60_2.jpg" alt="VolvoV60" style="width:100%">
+            <div class="text">Volvo V60</div>
+        </div>
+            
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="bilder/volvoxc90.jpg" alt="VolvoXC90" style="width:100%">
+            <div class="text">Volvo XC90</div>
+        </div>
+            
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="bilder/volvos90.jpg" alt="VolvoS90" style="width:100%">
+            <div class="text">Volvo S90</div>
+        </div>
+            
+        </div>
+        <br>
+            
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+
+        <div class="grid-container">
+            <div class="row">
+                <div class="column">
+                    <img src="bilder/volvov60_1.jpg" alt="bilde1">
+                </div>
+                <div class="column">
+                    <img src="bilder/volvov60.jpg" alt="bilde2">
+                </div>
+                <div class="column">
+                    <img src="bilder/volvoxc40.jpg" alt="bilde3">
+                </div>
+                <div class="column">
+                    <img src="bilder/volvoxc60.png" alt="bilde4">
+                </div>
+                <div class="column">
+                    <img src="bilder/volvov90.jpg" alt="bilde5">
+                </div>
+                <div class="column">
+                    <img src="bilder/volvoxc.jpg" alt="bilde6">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer skal inneholde varemerke og opphavsrettsinformasjon -->
+    <div class="footer">
+        <a>Gruppe 10 - 29.09.2021</a>
+        <a href="https://www.volvocars.com/no/legal/privacy/privacy-customer-privacy-policy">Personvern</a>
+        <a href="https://www.volvocars.com/no/v/legal/cookies">Informasjonskapsler</a>
+        <a href="https://www.volvocars.com/no/v/legal/legal">Vilkår og betingelser</a>
+        <a href="https://www.volvocars.com/no/footer/copyright">© Volvo 2021</a>
+    </div>
+
+    <script src="slideshow.js"></script>
+    <script src="dropdown.js"></script>
+
+</body>
+</html>
